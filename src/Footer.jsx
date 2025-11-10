@@ -1,7 +1,23 @@
 export default function Footer(){
     return (
-        <footer>
-            <p>Designed By Zainab Dar</p>
-        </footer>
+       <footer>
+  <div class="footer-nav">
+    <nav>
+      <a href="https://webpages.charlotte.edu/zdar1/">CLT Web</a>
+      <a href="https://github.com/zainab-dar">GitHub</a>  	       	
+      <a href="https://zainab-dar.github.io/itis3135/">itis3135.io</a>   
+      <a href="https://www.freecodecamp.org/zainabdar">freeCodeCamp</a>   
+      <a href="https://www.codecademy.com/profiles/zainab_dar">Codeacademy</a>    
+      <a href="https://www.linkedin.com/in/zainab-dar-630153286/">LinkedIn</a>
+      <a href="./itis3135/dozephin-site/about.html">Dozephin</a>
+    </nav>
+  </div>
+
+  <div class="footer-credit">
+    <a href="./dardesigns.com/index.html">
+      <small>&copy; 2025 Dar Designs</small>
+    </a>
+  </div>
+</footer>
     )
 }
