@@ -1,23 +1,26 @@
-export default function Footer(){
-    return (
-       <footer>
-  <div class="footer-nav">
-    <nav>
-      <a href="https://webpages.charlotte.edu/zdar1/">CLT Web |</a>
-      <a href="https://github.com/zainab-dar"> GitHub|</a>  	       	
-      <a href="https://zainab-dar.github.io/itis3135/"> itis3135.io |</a>   
-      <a href="https://www.freecodecamp.org/zainabdar"> freeCodeCamp |</a>   
-      <a href="https://www.codecademy.com/profiles/zainab_dar"> Codeacademy |</a>    
-      <a href="https://www.linkedin.com/in/zainab-dar-630153286/"> LinkedIn |</a>
-      <a href="./itis3135/dozephin-site/about.html"> Dozephin |</a>
-    </nav>
-  </div>
+import { Link } from 'react-router-dom';
 
-  <div class="footer-credit">
-    <a href="./dardesigns.com/index.html">
-      <small>&copy; 2025 Dar Designs</small>
-    </a>
-  </div>
-</footer>
-    )
+function Footer() {
+  return (
+    <footer>
+      <h1>Zainab Dar's Zen Dolphin | ITIS 3135</h1>
+      <p className="tagline">Come along as I learn how to build my first webpage!</p>
+      <nav>
+        <a href="https://webpages.charlotte.edu/zdar1/">CLT Web |</a>
+        <a href="https://github.com/zainab-dar"> GitHub |</a>  	       	
+        <a href="https://zainab-dar.github.io/itis3135/"> itis3135.io |</a>   
+        <a href="https://www.freecodecamp.org/zainabdar"> freeCodeCamp |</a>   
+        <a href="https://www.codecademy.com/profiles/zainab_dar"> Codeacademy |</a>    
+        <a href="https://www.linkedin.com/in/zainab-dar-630153286/"> LinkedIn |</a>
+        <a href="./itis3135/dozephin-site/about.html"> Dozephin |</a>
+      </nav>
+      <div className="footer-credit">
+        <a href="./dardesigns.com/index.html">
+          <small>&copy; 2025 Dar Designs</small>
+        </a>
+      </div>
+    </footer>
+  );
 }
+
+export default Footer;

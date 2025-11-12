@@ -3,12 +3,15 @@ import { Outlet } from 'react-router';
 
 export default function Layout(){
     return(
-        <div className="App">
-            <Header />
+    <>
+        <Header />
+        <main>
             <Outlet />
-            <footer>
-                <p>Designed By Zainab Dar</p>
-            </footer>
-        </div>
+
+        </main>
+        <footer>
+            <p>Designed By Zainab Dar</p>
+        </footer>
+     </>
     );
 }

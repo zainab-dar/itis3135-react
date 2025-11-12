@@ -1,72 +1,15 @@
-import React from "react";
-import zainabPortrait from './zainab-portrait.jpg';
-const Introduction = () => {
-  return (
+import Header from './Header'
+export default function Introduction(){
+
+    document.title =+ "| Introduction";
+return(<>
+    <Header/>
     <main>
-      <h2>Introduction</h2>
-
-      <figure>
-        <img src={zainabPortrait} alt="Course related" />
-        <figcaption>Senior portrait</figcaption>
-      </figure>
-
-      <p>
-        Hi, my name is <strong>Zainab</strong>. I'm a first-year student, but
-        technically a junior because I went to middle college. I am majoring in
-        Computer Science with a concentration in Human Computer Interaction. In
-        my free time I like to hang out with friends, bake, and go to cafes.
-      </p>
-
-      <p>
-        <strong>Personal Background:</strong> My family is originally from
-        Pakistan. I was born in Virginia and my family moved to Charlotte when I
-        was just a couple of months old and I’ve been living here ever since.
-      </p>
-
-      <p>
-        <strong>Professional Background:</strong> I have done one internship in
-        high school through a program run by the city of Charlotte where I got
-        to intern at Accenture. It was really fun and sparked my interest in UX
-        Design. For the past year now, I've been working part-time at Kumon.
-      </p>
-
-      <p>
-        <strong>Academic Background:</strong> I just graduated high school with
-        my Associate’s degree this past May. I am a Junior, Computer Science
-        Major.
-      </p>
-
-      <p>
-        <strong>Primary Computer:</strong> Apple, Sonoma 14.7.7 13-inch 2019
-        MacBook Air. I primarily work from home or on campus.
-      </p>
-
-      <p>
-        <strong>Courses I’m Taking & Why:</strong>
-      </p>
-
-      <ul className="courses">
-        <li>
-          <strong>ITSC3688</strong> - Computers and Their Impact on Society:
-          Required course for my major, and to strengthen public speaking skills
-        </li>
-        <li>
-          <strong>ITSC1600</strong> - Computing Professionals: Required part of
-          my degree
-        </li>
-        <li>
-          <strong>ITIS3130</strong> - Intro to Human Centered Computing: To gain
-          further understanding in HCI and is part of my concentration
-        </li>
-        <li>
-          <strong>ITIS4353</strong> - Social Technology Design: I chose this
-          class from the options I had for my concentration because it discusses
-          the social aspect of computing and how interaction works on social
-          interfaces and I found that to be very interesting.
-        </li>
-      </ul>
+        <h2>Introduction</h2>
+        <p>words words words</p>
     </main>
-  );
-};
-
-export default Introduction;
+    <footer>
+        <p>words for footer</p>
+    </footer>
+    </>);
+}

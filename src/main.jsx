@@ -1,13 +1,25 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";
-import "./index.css";
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import App from './App.jsx'
+import Layout from './Layout.jsx'
+import Introduction from './Introduction.jsx'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+const container = document.getElementById('root')
+
+if (!window._reactRoot) {
+  window._reactRoot = createRoot(container)
+}
+
+window._reactRoot.render(
+  <StrictMode>
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='/' element={<App />}></Route>
+          <Route path='/introduction' element={<Introduction />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
-  </React.StrictMode>
-);
+  </StrictMode>
+)
