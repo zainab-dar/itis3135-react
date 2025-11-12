@@ -1,6 +1,5 @@
 import React from "react";
-import zainabPortrait from "../assets/images/zainab-portrait.jpg"; // adjust path as needed
-
+import zainabPortrait from './zainab-portrait.jpg';
 const Introduction = () => {
   return (
     <main>
