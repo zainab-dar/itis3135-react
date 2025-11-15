@@ -9,7 +9,7 @@ function Introduction() {
       <main>
         <h2>Introduction</h2>  
         <figure>
-          <img src="{zainab-portrait.jpg}" alt="self portrait" />
+          <img src={portrait} alt="self portrait" />
           <figcaption>senior portrait</figcaption>
         </figure>
         
