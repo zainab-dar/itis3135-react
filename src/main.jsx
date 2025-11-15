@@ -18,9 +18,9 @@ window._reactRoot.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<App />} />  {/* Changed to index route */}
+          <Route index element={<App />} />  
           <Route path='introduction' element={<Introduction />} />
-          <Route path='contract' element={<Contract />} />  {/* ← ADD THIS */}
+          <Route path='contract' element={<Contract />} />  
         </Route>
       </Routes>
     </BrowserRouter>
