@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App.jsx'
 import Layout from './Layout.jsx'
 import Introduction from './Introduction.jsx'
+import Contract from './Contract.jsx' 
 
 const container = document.getElementById('root')
 
@@ -16,8 +17,9 @@ window._reactRoot.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='/' element={<App />}></Route>
-          <Route path='/introduction' element={<Introduction />} />
+          <Route index element={<App />} />  {/* Changed to index route */}
+          <Route path='introduction' element={<Introduction />} />
+          <Route path='contract' element={<Contract />} />  {/* ← ADD THIS */}
         </Route>
       </Routes>
     </BrowserRouter>

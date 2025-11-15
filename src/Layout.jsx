@@ -1,17 +1,15 @@
-import Header from './Header';
-import { Outlet } from 'react-router';
+import { Outlet } from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
-export default function Layout(){
-    return(
+function Layout() {
+  return (
     <>
-        <Header />
-        <main>
-            <Outlet />
-
-        </main>
-        <footer>
-            <p>Designed By Zainab Dar</p>
-        </footer>
-     </>
-    );
+      <Header />
+      <Outlet />  {/* This renders the child routes */}
+      <Footer />
+    </>
+  )
 }
+
+export default Layout

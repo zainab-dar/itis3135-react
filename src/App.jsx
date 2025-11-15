@@ -1,20 +1,17 @@
 import { Link } from 'react-router-dom'
-import Header from './Header'
-import Footer from './Footer'
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <h2>Introduction</h2>
-        <p> mini intro </p>
-      </main>
-      <footer>
-        <p>hello</p>
-      </footer>
-      <Footer />
-    </>
+    <main>
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is the home page content.</p>
+      
+      {/* Add navigation links */}
+      <nav>
+        <Link to="/introduction">View Introduction</Link>
+        <Link to="/contract">View Contract</Link>
+      </nav>
+    </main>
   )
 }
 
