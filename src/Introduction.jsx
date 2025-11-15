@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/default.css';
-
+import portrait from './zainab-portrait.jpg';
 
 function Introduction() {
   return (
@@ -9,7 +9,7 @@ function Introduction() {
       <main>
         <h2>Introduction</h2>  
         <figure>
-          <img src="/zainab-portrait.jpg" alt="self portrait" />
+          <img src="{zainab-portrait.jpg}" alt="self portrait" />
           <figcaption>senior portrait</figcaption>
         </figure>
         
