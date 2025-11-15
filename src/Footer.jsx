@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer>
-      <h1>Zainab Dar's Zen Dolphin | ITIS 3135</h1>
-      <p className="tagline">Come along as I learn how to build my first webpage!</p>
       <nav>
         <a href="https://webpages.charlotte.edu/zdar1/">CLT Web |</a>
         <a href="https://github.com/zainab-dar"> GitHub |</a>  	       	

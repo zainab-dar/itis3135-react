@@ -1,17 +1,15 @@
 import React from 'react';
 import './styles/default.css';
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+
 
 function Introduction() {
   return (
     <div>
-      <Header />
       
       <main>
         <h2>Introduction</h2>  
         <figure>
-          <img src="zainab-portrait.jpg" alt="Course related image" />
+          <img src="/zainab-portrait.jpg" alt="self portrait" />
           <figcaption>senior portrait</figcaption>
         </figure>
         
@@ -52,7 +50,6 @@ function Introduction() {
         </ul>
       </main>
       
-      <Footer />
     </div>
   );
 }

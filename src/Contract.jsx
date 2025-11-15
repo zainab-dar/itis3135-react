@@ -1,12 +1,9 @@
 import React from 'react';
 import './styles/default.css';
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
 
 function Contract() {
   return (
     <div>
-      <Header />
       
       <main>
         <h2>Contract</h2>  
@@ -20,7 +17,6 @@ function Contract() {
         </p>
       </main>
       
-      <Footer />
     </div>
   );
 }

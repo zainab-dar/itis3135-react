@@ -5,6 +5,8 @@ import App from './App.jsx'
 import Layout from './Layout.jsx'
 import Introduction from './Introduction.jsx'
 import Contract from './Contract.jsx' 
+import './App.css'
+
 
 const container = document.getElementById('root')
 
