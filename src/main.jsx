@@ -15,12 +15,12 @@ if (!window._reactRoot) {
 
 window._reactRoot.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/itis3135-react">
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<App />} />  
+          <Route index element={<App />} />
           <Route path='introduction' element={<Introduction />} />
-          <Route path='contract' element={<Contract />} />  
+          <Route path='contract' element={<Contract />} />
         </Route>
       </Routes>
     </BrowserRouter>
