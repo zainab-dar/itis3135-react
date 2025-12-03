@@ -15,7 +15,7 @@ if (!window._reactRoot) {
 
 window._reactRoot.render(
   <StrictMode>
-    <BrowserRouter basename="/itis3135-react">
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<App />} />
