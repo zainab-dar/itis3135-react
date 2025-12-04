@@ -259,3 +259,15 @@ table tr:last-child td:last-child {
   font-size: 1.3em; /* increased size */
   font-weight: bold;
 }
+/* App.css or Students.css */
+.student-list {
+  margin: 0 20px; 
+}
+
+.student-card {
+  margin-bottom: 20px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+

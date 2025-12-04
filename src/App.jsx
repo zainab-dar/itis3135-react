@@ -10,7 +10,9 @@ function App() {
       <nav>
         <Link to="/introduction">View Introduction</Link>
         <Link to="/contract">View Contract</Link>
+        <Link to="/students">View Students</Link>
       </nav>
+      
     </main>
   )
 }
