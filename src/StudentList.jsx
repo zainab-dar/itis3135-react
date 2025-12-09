@@ -11,7 +11,6 @@ const Students = () => {
   setStudents(studentData);
 }, []);
 
-
   const handleSearch = (value) => {
     setSearchTerm(value);
 
@@ -27,7 +26,6 @@ const Students = () => {
   {filteredStudents.map((student) => (
     <div key={student.prefix} className="student-card">
 
-      {/* IMAGE */}
       {student.media?.hasImage && (
         <img
           src={student.media.src}
@@ -36,21 +34,17 @@ const Students = () => {
         />
       )}
 
-      {/* NAME */}
       <h2>
         {student.name.first} {student.name.last}
       </h2>
 
-      {/* MASCOT */}
       <p><strong>Mascot:</strong> {student.mascot}</p>
 
-      {/* PERSONAL STATEMENT */}
       <p>
         <strong>Personal Statement:</strong><br />
         {student.personalStatement}
       </p>
 
-      {/* BACKGROUND SECTIONS */}
       <div className="background-section">
         <strong>Personal Background:</strong>
         <p>{student.backgrounds.personal}</p>
@@ -65,7 +59,6 @@ const Students = () => {
         <p>{student.backgrounds.subject}</p>
       </div>
 
-      {/* COURSES */}
       <div>
         <strong>Courses This Semester:</strong>
         <ul>
@@ -79,20 +72,16 @@ const Students = () => {
         </ul>
       </div>
 
-      {/* QUOTE */}
       {student.quote && (
         <p className="quote">
           “{student.quote.text}” — {student.quote.author}
         </p>
       )}
 
-      {/* FUN FACT */}
       <p><strong>Fun Fact:</strong> {student.funFact}</p>
 
-      {/* EXTRA INFORMATION */}
       <p><strong>Additional Info:</strong> {student.additional}</p>
 
-      {/* LINKS */}
       <div className="links">
         <strong>Links:</strong>
         <ul>
@@ -116,4 +105,4 @@ const Students = () => {
   );
 };
 
-export default Students;
+export default StudentList;

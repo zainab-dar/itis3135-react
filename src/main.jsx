@@ -5,7 +5,7 @@ import App from './App.jsx'
 import Layout from './Layout.jsx'
 import Introduction from './Introduction.jsx'
 import Contract from './Contract.jsx' 
-import Students from './Students.jsx'
+import Students from './StudentList.jsx'
 import './styles/default.css';
 
 
