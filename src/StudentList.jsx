@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import studentsData from "./StudentList.json";
+import studentData from "./StudentList.json";
 import "./styles/default.css";
 
 const Students = () => {
@@ -8,9 +8,9 @@ const Students = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    setStudents(studentsData);
-    setFilteredStudents(studentsData);
-  }, []);
+  setStudents(studentData);
+}, []);
+
 
   const handleSearch = (value) => {
     setSearchTerm(value);
