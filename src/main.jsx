@@ -5,7 +5,7 @@ import App from './App.jsx'
 import Layout from './Layout.jsx'
 import Introduction from './Introduction.jsx'
 import Contract from './Contract.jsx' 
-import StudentList from './StudentList.jsx'
+import Students from './StudentList.jsx'
 import './styles/default.css';
 
 
@@ -23,7 +23,7 @@ window._reactRoot.render(
           <Route index element={<App />} />
           <Route path='introduction' element={<Introduction />} />
           <Route path='contract' element={<Contract />} />
-          <Route path="/students" element={<Students />} />
+          <Route path='students' element={<Students />} />
 
         </Route>
       </Routes>

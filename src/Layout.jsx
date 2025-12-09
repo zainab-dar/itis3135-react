@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <Outlet />  {/* This renders the child routes */}
+      <Outlet />  
       <Footer />
     </>
   )

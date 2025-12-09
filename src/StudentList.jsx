@@ -9,6 +9,7 @@ const Students = () => {
 
   useEffect(() => {
   setStudents(studentData);
+  setFilteredStudents(studentData);
 }, []);
 
   const handleSearch = (value) => {
@@ -105,4 +106,4 @@ const Students = () => {
   );
 };
 
-export default StudentList;
+export default Students;
