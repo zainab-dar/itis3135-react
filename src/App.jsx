@@ -5,10 +5,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Import Pages
-import Home from './Home';
-import Introduction from './Introduction';
-import Contract from './Contract';
-import Students from './StudentList';
+import Home from './pages/Home';
+import Introduction from './pages/Introduction';
+import Contract from './pages/Contract';
+import StudentList from './pages/StudentList';
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
         <Route path="/introduction" element={<Introduction />} />
         <Route path="/students" element={<StudentList />} />
         <Route path="/contract" element={<Contract />} />
-
+        {/* Optional: Add a catch-all for 404 pages */}
+        {/* <Route path="*" element={<h2>404 Not Found</h2>} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
