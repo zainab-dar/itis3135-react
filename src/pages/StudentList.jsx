@@ -77,7 +77,7 @@ function StudentList() {
 
     return (
         <main style={{ padding: "20px", backgroundColor: "#F6EFE6", color: "#4A3A31", minHeight: "100vh" }}>
-            <h2 style={{ color: "#6B4226" }}>Student Introductions Slideshow 🎓</h2>
+            <h2 style={{ color: "#6B4226" }}>Student Introductions </h2>
 
             {/* SEARCH & COUNT */}
             <div style={{ marginBottom: "20px", padding: "15px", border: "1px solid #D2B89C", borderRadius: "8px" }}>
