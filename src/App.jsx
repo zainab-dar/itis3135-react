@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/introduction" element={<Introduction />} />
-        <Route path="/students" element={<StudentList />} />
+        <Route path="/studentlist" element={<StudentList />} />
         <Route path="/contract" element={<Contract />} />
         {/* Optional: Add a catch-all for 404 pages */}
         {/* <Route path="*" element={<h2>404 Not Found</h2>} /> */}
