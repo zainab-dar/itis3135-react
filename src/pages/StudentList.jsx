@@ -356,7 +356,7 @@ function StudentList() {
 // Basic style for the navigation buttons
 const buttonStyle = {
     padding: '10px 20px',
-    backgroundColor: '#238636',
+    backgroundColor: '#472f13ff',
     color: 'white',
     border: 'none',
     borderRadius: '6px',
