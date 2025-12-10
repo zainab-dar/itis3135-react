@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/default.css';
 import portrait from './zainab-portrait.jpg';
 
 function Introduction() {
