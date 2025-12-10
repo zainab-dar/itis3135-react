@@ -5,7 +5,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Import Pages
-import Home from './pages/Home';
 import Introduction from './pages/Introduction';
 import Contract from './pages/Contract';
 import StudentList from './pages/StudentList';
