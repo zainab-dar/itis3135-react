@@ -157,7 +157,7 @@ function StudentList() {
                         width: '100%',
                         maxWidth: '400px',
                         borderRadius: '5px',
-                        border: '1px solid #58a6ff',
+                        border: '1px solid #4f0404ff',
                         backgroundColor: '#0d1117',
                         color: '#c9d1d9'
                     }}
@@ -166,7 +166,7 @@ function StudentList() {
             
             {/* --- CHECKBOX FILTER CONTROLS --- */}
             <div style={{ marginBottom: '20px', padding: '15px', border: '1px solid #30363d', borderRadius: '5px' }}>
-                <h3 style={{ marginTop: 0, color: '#79c0ff' }}>Display Filters</h3>
+                <h3 style={{ marginTop: 0, color: '#4f0404ff' }}>Display Filters</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
                     {Object.keys(initialFilterCriteria).map(key => (
                         <label key={key} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
@@ -186,7 +186,7 @@ function StudentList() {
             <div className="slideshow-container" style={{ textAlign: 'center' }}>
                 {studentCount > 0 ? (
                     <div className="student-card" style={{ 
-                        border: '1px solid #58a6ff', 
+                        border: '1px solid #4f0404ff', 
                         padding: '20px', 
                         borderRadius: '8px', 
                         margin: '20px auto',
@@ -198,7 +198,7 @@ function StudentList() {
                         
                         {/* NAME */}
                         {filterCriteria.name && (
-                            <h3 style={{ color: '#58a6ff', marginTop: 0, textAlign: 'center' }}>
+                            <h3 style={{ color: '#4f0404ff', marginTop: 0, textAlign: 'center' }}>
                                 {getStudentName(currentStudent)}
                             </h3>
                         )}
@@ -229,7 +229,7 @@ function StudentList() {
 
                         {/* MASCOT */}
                         {filterCriteria.mascot && currentStudent.mascot && (
-                            <p style={{ color: '#79c0ff', fontSize: '0.9em' }}>
+                            <p style={{ color: '#4f3012ff', fontSize: '0.9em' }}>
                                 <strong>Mascot:</strong> {currentStudent.mascot}
                             </p>
                         )}
@@ -246,7 +246,7 @@ function StudentList() {
                         
                         {/* BACKGROUNDS */}
                         {filterCriteria.backgrounds && currentStudent.backgrounds && (
-                            <div style={{ fontSize: '0.9em', color: '#c9d1d9', marginTop: '10px', borderLeft: '3px solid #79c0ff', paddingLeft: '10px' }}>
+                            <div style={{ fontSize: '0.9em', color: '#c9d1d9', marginTop: '10px', borderLeft: '3px solid #4b1e0fff', paddingLeft: '10px' }}>
                                 <p style={{ fontWeight: 'bold', margin: '0 0 5px 0' }}>Backgrounds:</p>
                                 {currentStudent.backgrounds.academic && <p style={{ margin: 0 }}><strong>Academic:</strong> {currentStudent.backgrounds.academic}</p>}
                                 {currentStudent.backgrounds.professional && <p style={{ margin: 0 }}><strong>Professional:</strong> {currentStudent.backgrounds.professional}</p>}
@@ -255,7 +255,7 @@ function StudentList() {
                         
                         {/* CLASSES (Using the 'courses' array from the API) */}
                         {filterCriteria.classes && currentStudent.courses && currentStudent.courses.length > 0 && (
-                            <div style={{ marginTop: '15px', borderLeft: '3px solid #f08080', paddingLeft: '10px' }}>
+                            <div style={{ marginTop: '15px', borderLeft: '3px solid #4f0404ff', paddingLeft: '10px' }}>
                                 <p style={{ fontWeight: 'bold', margin: '0 0 5px 0' }}>Courses Enrolled:</p>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', margin: 0 }}>
                                     {currentStudent.courses.map((course, index) => (
@@ -273,7 +273,7 @@ function StudentList() {
                         )}
                         {/* Fallback for Classes/Courses */}
                         {filterCriteria.classes && (!currentStudent.courses || currentStudent.courses.length === 0) && (
-                            <div style={{ marginTop: '15px', borderLeft: '3px solid #f08080', paddingLeft: '10px' }}>
+                            <div style={{ marginTop: '15px', borderLeft: '3px solid #4f0404ff', paddingLeft: '10px' }}>
                                 <p style={{ fontStyle: 'italic', color: '#8b949e' }}>
                                     No specific course list was provided by this student.
                                 </p>
@@ -283,7 +283,7 @@ function StudentList() {
                         {/* QUOTE */}
                         {filterCriteria.quote && currentStudent.quote && (currentStudent.quote.text || currentStudent.quote.author) && (
                             <blockquote style={{ 
-                                borderLeft: '3px solid #58a6ff', 
+                                borderLeft: '3px solid #4d3720ff', 
                                 margin: '15px 0', 
                                 paddingLeft: '10px', 
                                 fontStyle: 'italic',
